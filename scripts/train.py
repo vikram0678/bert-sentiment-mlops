@@ -15,7 +15,7 @@ def train():
         print("Error: train.csv not found! Run preprocess.py first.")
         return
 
-    train_df = pd.read_csv('data/processed/train.csv').sample(1000) 
+    train_df = pd.read_csv('data/processed/train.csv').sample(00) 
     test_df = pd.read_csv('data/processed/test.csv').sample(200)
     
     train_dataset = Dataset.from_pandas(train_df)
@@ -41,7 +41,7 @@ def train():
         output_dir="./results",
         eval_strategy="epoch",           # Show accuracy at end of epoch
         per_device_train_batch_size=1,   # Keep memory very low
-        gradient_accumulation_steps=8,   # High quality training without more RAM
+        gradient_accumulation_steps=5,   # High quality training without more RAM
         num_train_epochs=1,              # 1 pass is enough for 5000 samples
         learning_rate=3e-5,
         weight_decay=0.01,
