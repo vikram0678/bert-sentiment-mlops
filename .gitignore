@@ -1,0 +1,14 @@
+# Data and Models
+data/raw/
+data/processed/
+model_output/
+results/predictions.csv
+
+# Python
+__pycache__/
+*.py[cod]
+python-env/
+.env
+
+# Docker
+.docker_temp/

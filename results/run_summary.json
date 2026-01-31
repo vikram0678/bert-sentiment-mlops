@@ -1,0 +1,12 @@
+{
+  "hyperparameters": {
+    "model_name": "distilbert-base-uncased",
+    "learning_rate": 3e-05,
+    "batch_size": 8,
+    "num_epochs": 1
+  },
+  "final_metrics": {
+    "accuracy": 0.8542,
+    "f1_score": 0.8491
+  }
+}
